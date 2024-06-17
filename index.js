@@ -51,4 +51,3 @@ const changeAnimate = () => {
 const changeHide = () => {
   document.getElementById("switchHide").click();
 };
-
