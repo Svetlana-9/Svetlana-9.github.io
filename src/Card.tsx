@@ -4,7 +4,7 @@ import { Cat, FavouriteCatId } from "./App";
 interface IPropsCard {
     cat: Cat,
     favouriteCatsId: FavouriteCatId[],
-    setFavouriteCatsId: React.Dispatch<React.SetStateAction<FavouriteCatId[]>>
+    setFavouriteCatsId: React.Dispatch<React.SetStateAction<FavouriteCatId[]>>,
 }
 
 export default function Card(props: IPropsCard) {
@@ -17,7 +17,7 @@ export default function Card(props: IPropsCard) {
         } else {
             delFavouriteCat(id);
         };
-    }
+    };
 
     let addFavouriteCat = (cat_id: string) => {
         let items = [...props.favouriteCatsId];

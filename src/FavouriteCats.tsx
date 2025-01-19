@@ -16,7 +16,7 @@ export default function FavouriteCats(props: IPropsCats) {
         }
 
         const promises: Promise<Cat>[] = props.favouriteCatsId.map((favCat) => {
-            return getData(`https://api.thecatapi.com/v1/images/${favCat.cat_id}`)
+            return getData(`https://api.thecatapi.com/v1/images/${favCat.cat_id}`);
         })
 
         Promise.all(promises)
@@ -26,7 +26,7 @@ export default function FavouriteCats(props: IPropsCats) {
             .catch((err) => {
                 console.error(err);
             });
-    }, [props.favouriteCatsId])
+    }, [props.favouriteCatsId]);
 
     return (
         <div className="cats">

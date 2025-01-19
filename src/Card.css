@@ -25,7 +25,7 @@
 }
 
 .card:hover {
-  .card__like{
+  .card__like {
     display: block;
 
     &._favourite {

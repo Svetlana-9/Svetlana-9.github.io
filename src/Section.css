@@ -6,7 +6,8 @@
 .section:hover {
   background-color: #1E88E5;
   cursor: pointer;
-  p{
+
+  p {
     color: #FFFFFF;
   }
 }

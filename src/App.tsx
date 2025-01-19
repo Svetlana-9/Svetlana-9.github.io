@@ -4,12 +4,12 @@ import AllCats from "./AllCats.tsx";
 import FavouriteCats from "./FavouriteCats.tsx";
 
 export interface Cat {
-    id: string;
-    url: string;
+    id: string,
+    url: string,
 }
 
 export interface FavouriteCatId {
-    cat_id: string;
+    cat_id: string,
 }
 
 export function App() {

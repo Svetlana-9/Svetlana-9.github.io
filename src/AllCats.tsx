@@ -9,7 +9,7 @@ const api_key =
 
 export interface IPropsCats {
     favouriteCatsId: FavouriteCatId[],
-    setFavouriteCatsId: React.Dispatch<React.SetStateAction<FavouriteCatId[]>>
+    setFavouriteCatsId: React.Dispatch<React.SetStateAction<FavouriteCatId[]>>,
 }
 
 const pageAllCatsHeight = document.documentElement.scrollHeight - 65 - 48;
@@ -29,7 +29,6 @@ export default function AllCats(props: IPropsCats) {
     const fetchMoreData = async () => {
         try {
             const url = `https://api.thecatapi.com/v1/images/search?limit=${countCatsForFetch}&page=${page}&order=ASC`;
-            console.log(url)
             const response = await fetch(url, {
                 headers: {
                     "x-api-key": api_key,
