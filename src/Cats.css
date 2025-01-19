@@ -1,0 +1,9 @@
+.cats {
+  padding: 48px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 80px;
+  margin-top: 65px;
+}
+
