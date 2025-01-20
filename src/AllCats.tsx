@@ -12,6 +12,7 @@ export interface IPropsCats {
     setFavouriteCatsId: React.Dispatch<React.SetStateAction<FavouriteCatId[]>>,
 }
 
+// For the infinite scroll to work correctly, it is necessary to request more cats than can fit on one page.
 const pageAllCatsHeight = document.documentElement.scrollHeight - 65 - 48;
 const pageAllCatsWidth = document.documentElement.scrollWidth - 120;
 const countCatsOnPageByWidth = Math.floor(pageAllCatsWidth / 305) + (pageAllCatsWidth % 305 >= 225 ? 1 : 0);
